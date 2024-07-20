@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <nav className='flex p-4 items-center justify-between bg-secondary shadow-sm'>
-        <Image src={'/logo.svg'} width={160} height={100} alt="logo"/>
+        <Image  priority={true} src={'/logo.svg'} width={160} height={100} style={{ width: '160px', height: '100' }} alt="logo"/>
        <ul className='hidden md:flex gap-6 p-4'>
         <li className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${path=='/dashboard'&&'text-primary font-bold'}`}>Dashboard</li>
         <li className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${path=='/dashboard/question'&&'text-primary font-bold'}`}>Questions</li>
