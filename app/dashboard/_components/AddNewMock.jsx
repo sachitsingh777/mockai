@@ -42,7 +42,7 @@ const AddNewMock = () => {
         if (MockJsonResp) {
             const resp = await db.insert(MockAI).values({
                 mockId: uuidv4(),
-                jsonMockResp: MockJsonResp,
+                jsonMockResp: jsonResponse,
                 jobPosition: jobPosition,
                 jobDescription: jobDescription,
                 jobExperience: jobExperience,
